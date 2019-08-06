@@ -16,6 +16,7 @@ const upload = multer(multerConfig);
 routes.post('/users', UserController.store);
 routes.get('/providers', ProviderController.index);
 routes.post('/appointment', AppointmentController.store);
+routes.get('/appointment', AppointmentController.index);
 routes.post('/sessions', SessionController.store);
 routes.use(authMiddleware);
 routes.put('/users', UserController.update);
